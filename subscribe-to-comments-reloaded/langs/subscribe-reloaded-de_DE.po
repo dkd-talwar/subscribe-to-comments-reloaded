@@ -465,7 +465,7 @@ msgstr "Deaktivieren"
 
 #: templates/user.php:72 templates/author.php:74
 msgid "All comments"
-msgstr ""
+msgstr "Alle Kommentare"
 
 #: templates/user.php:74 templates/author.php:76 options/panel1.php:166
 msgid "Activate"

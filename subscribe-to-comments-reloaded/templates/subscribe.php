@@ -67,7 +67,7 @@ if ( ! empty( $email ) ) {
 
 	echo "<p>$message</p>";
 } else {
-	$email = isset( $_COOKIE['comment_author_email_' . COOKIEHASH] ) ? $_COOKIE['comment_author_email_' . COOKIEHASH] : 'email';
+	$email = isset( $_COOKIE['comment_author_email_' . COOKIEHASH] ) ? $_COOKIE['comment_author_email_' . COOKIEHASH] : 'E-mail';
 ?>
 
 	<p><?php
@@ -86,7 +86,7 @@ if ( ! empty( $email ) ) {
 		echo $_SERVER['REQUEST_URI'];
 	} ?>" method="post" onsubmit="if(this.sre.value=='' || this.sre.indexOf('@')==0) return false">
 		<fieldset style="border:0">
-			<p><label for="sre"><?php _e( 'Email', 'subscribe-reloaded' ) ?></label>
+			<p><label for="sre"><?php _e( 'E-mail', 'subscribe-reloaded' ) ?></label>
 				<input id='sre' type="text" class="subscribe-form-field" name="sre" value="<?php echo $email ?>" size="22" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue" />
 				<input name="submit" type="submit" class="subscribe-form-button" value="<?php _e( 'Send', 'subscribe-reloaded' ) ?>" />
 			</p>
